@@ -1,0 +1,6 @@
+[submodule "server/deps/libmaid"]
+	path = server/deps/libmaid
+	url = ssh://git@github.com/w359405949/libmaid.git
+[submodule "client/deps/libmaid"]
+	path = client/deps/libmaid
+	url = ssh://git@github.com/w359405949/libmaid.git

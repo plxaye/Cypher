@@ -1,0 +1,33 @@
+package cypher.chat;
+
+message ChatRequest
+{
+    optional string id = 1;
+    optional string message = 2;
+    optional string receiver = 3;
+}
+
+message ChatResponse
+{
+    optional bool success = 1;
+}
+
+message OnlineRequest
+{
+    optional string id = 1;
+    optional string message = 2;
+    optional string room_id = 3;
+}
+
+message OnlineResponse
+{
+    optional bool success = 1;
+}
+
+message OfflineRequest
+{
+}
+
+message OfflineResponse
+{
+}

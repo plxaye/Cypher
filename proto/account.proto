@@ -1,0 +1,21 @@
+package cypher.account;
+
+message LoginRequest
+{
+    optional string username = 1;
+    optional string password = 2;
+}
+
+message LoginResponse
+{
+    optional string account_id = 1;
+    optional string token = 2;
+}
+
+message LogoutRequest
+{
+}
+
+message LogoutResponse
+{
+}

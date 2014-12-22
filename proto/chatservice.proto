@@ -1,0 +1,27 @@
+import "chat.proto";
+import "chatroom.proto";
+import "account.proto";
+
+package cypher.service;
+
+option cc_generic_services = true;
+
+service AccountService
+{
+    rpc Login(cypher.account.LoginRequest) returns(cypher.account.LoginResponse);
+    rpc Logout(cypher.account.LogoutRequest) returns(cypher.account.LogoutResponse);
+}
+
+service ChatService
+{
+    rpc Online(cypher.chat.OnlineRequest) returns(cypher.chat.OnlineResponse);
+    rpc Chat(cypher.chat.ChatRequest) returns(cypher.chat.ChatResponse);
+    rpc Offline(cypher.chat.OfflineRequest) returns(cypher.chat.OfflineResponse);
+}
+
+service ChatRoomService
+{
+    rpc Enter(cypher.chatroom.EnterRequest) returns(cypher.chatroom.EnterResponse);
+    rpc Chat(cypher.chatroom.ChatRequest) returns(cypher.chatroom.ChatResponse);
+    rpc Leave(cypher.chatroom.LeaveRequest) returns(cypher.chatroom.LeaveResponse);
+}

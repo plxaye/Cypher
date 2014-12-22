@@ -1,0 +1,31 @@
+package cypher.chatroom;
+
+message EnterRequest
+{
+    optional string room_id = 1;
+}
+
+message EnterResponse
+{
+    optional bool success = 1;
+}
+
+message ChatRequest
+{
+    optional string room_id = 1;
+}
+
+message ChatResponse
+{
+    optional bool success = 1;
+}
+
+message LeaveRequest
+{
+    optional string room_id = 1;
+}
+
+message LeaveResponse
+{
+    optional bool success = 1;
+}
